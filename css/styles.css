@@ -96,6 +96,7 @@ ul, ol {
 
 .board {
     background: #2e2f42;
+
 }
 .title {
         font-weight: 700;
@@ -104,6 +105,7 @@ ul, ol {
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        
        
 }
 .button {
@@ -114,6 +116,12 @@ ul, ol {
     color: #ffffff;
     background: #4d5ae5;
     cursor: pointer;
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    border-radius: 4px;
+
+
 }
 .button:hover,
 .button:focus {
