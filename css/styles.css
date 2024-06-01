@@ -104,7 +104,7 @@ h1, h3, p {
 }
 
 .section-goals {
-    padding: 120px 15px;
+    padding: 120px 0;
     margin: 0 auto;
 } 
 
@@ -112,9 +112,17 @@ h1, h3, p {
     padding: 120px 0;
 }
 
-.invisible {
-    visibility: hidden;
-    height: 0px;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0000);
+    overflow: hidden;
 }
 
 .list-container {
@@ -273,8 +281,7 @@ h1, h3, p {
 }
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
 }
 
@@ -298,6 +305,6 @@ h1, h3, p {
 }
 
 .footer-link {
-    display:inline-block;
+    display: inline-block;
     margin-bottom: 16px;
 }
